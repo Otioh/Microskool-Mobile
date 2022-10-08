@@ -1,11 +1,19 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { Button, Image,  StyleSheet, Text, TextInput, View } from 'react-native';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <Text>Welcome to Microskool</Text>
+      <TextInput placeholder='Enter Email' style={styles.inputs} />
+      <TextInput placeholder='Enter Password' style={styles.inputs} />
+      
+      <Button onPress={()=>{
+        alert('Login not yet Integrated')
+      }} color={'rgb(83,83,170)'} title='Login Now'/>
+      <StatusBar  style="auto" />
+      <Image style={styles.image} source={''} />
+     
     </View>
   );
 }
@@ -17,4 +25,15 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  image:{
+    backgroundColor:'green'
+  },
+  inputs:{
+    backgroundColor:'whitesmoke',
+    padding:10,
+    margin:5,
+    width:300,
+  }
+
+
 });
