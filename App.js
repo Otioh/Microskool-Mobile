@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { Button, Image,  StyleSheet, Text, TextInput, View } from 'react-native';
+import { Button, Image,  Modal,  StyleSheet, Text, TextInput, View } from 'react-native';
 
 export default function App() {
   return (
@@ -8,7 +8,7 @@ export default function App() {
       <TextInput placeholder='Enter Email' style={styles.inputs} />
       <TextInput placeholder='Enter Password' style={styles.inputs} />
       
-      <Button onPress={()=>{
+            <Button onPress={()=>{
         alert('Login not yet Integrated')
       }} color={'rgb(83,83,170)'} title='Login Now'/>
       <StatusBar  style="auto" />
